@@ -1,4 +1,4 @@
-import { Box, CardMedia, Grid, Switch, Typography, Button } from '@mui/material'
+import { Box, Grid, Switch, Typography } from '@mui/material'
 import CardProdutos from '../../components/cards/cardsProduto/CardProdutos'
 
 const Produtos = () => {
@@ -54,22 +54,20 @@ const Produtos = () => {
             </Box>
 
             <Box marginY={3} marginLeft={9}>
-                        <Typography variant="h6" style={{ fontWeight: "bold" }} textAlign="start" color="initial">
-                            Condição</Typography>
-                        <Typography variant="body2"  textAlign="start" color="initial">
-                            Novo (4)</Typography>
-                        <Typography variant="body2" textAlign="start" color="initial">
-                            Usado
-                            (4)</Typography>
+              <Typography variant="h6" style={{ fontWeight: "bold" }} textAlign="start" color="initial">
+                Condição</Typography>
+              <Typography variant="body2" textAlign="start" color="initial">
+                Novo (4)</Typography>
+              <Typography variant="body2" textAlign="start" color="initial">
+                Usado
+                (4)</Typography>
 
-                    </Box>
+            </Box>
 
-                    <Box marginY={3} marginLeft={9}>
+            <Box marginY={3} marginLeft={9}>
 
-                      <Button variant="text" >
-                        modificaQtd
-                      </Button>
-                    </Box>
+
+            </Box>
 
           </Grid>
           <Grid item xs={9}>
