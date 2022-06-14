@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div>
       <NavBar></NavBar>
-    <Produtos></Produtos>
+      <Produtos></Produtos>
 
       <Footer></Footer>
     </div>
