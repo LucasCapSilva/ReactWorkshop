@@ -4,16 +4,33 @@ import NavBar from './components/statics/navbar/NavBar'
 
 import Home from './paginas/home/Home'
 import Produtos from './paginas/produtos/Produtos'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
 const App = () => {
   return (
-    <div>
-      <NavBar></NavBar>
-      <Produtos></Produtos>
+    <>
+      <Router>
+        <NavBar />
 
-      <Footer></Footer>
-    </div>
+        <Routes>
+
+          <Route path="/" element={<Home />} />
+
+          <Route path="/home" element={<Home />} />
+
+          <Route path="/produtos" element={<Produtos />} />
+
+
+        </Routes>
+
+        <Footer />
+
+
+      </Router>
+
+
+    </>
   )
 }
 

@@ -23,8 +23,10 @@ const Produtos = () => {
     <>
       <Box sx={{ ...styleBackgroud }}>
         <Grid container >
-        <Grid item xs={3} >
-                    <Box margin={2}  marginLeft={9}>
+           
+        <Grid item xs={12} md={3} >
+            <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+            <Box margin={2}  marginLeft={9}>
                         <Typography variant="body1" textAlign="start" color="initial">
                             Instrumentos Musicais &gt; Instrumentos de Corda</Typography>
                     </Box>
@@ -87,8 +89,15 @@ const Produtos = () => {
 
                     </Box>
 
+            </Box>
+        
+               
+                    
                 </Grid>
-          <Grid item xs={9}>
+
+          
+        
+            <Grid item xs={12} md={9}>
 
             <CardProdutos />
 

@@ -8,6 +8,7 @@ import { Box } from '@mui/system'
 import MenuMobile from './NavBarMobile/MenuMobile/MenuMobile'
 import MenuNav from './menuNav/MenuNav'
 import NavBarMobile from './NavBarMobile/NavBarMobile';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
@@ -19,10 +20,12 @@ const NavBar = () => {
 
         <Toolbar>
           <Box marginX={5} >
+          <Link to="/home" className="text-decorator-none">
             <Avatar
               alt="Example Alt"
               sx={{ width: 160, height: 60 }}
               src="https://oombe.com/assets/img/mercadolivre_nova_logo.png" />
+               </Link>
           </Box>
           <MenuNav />
 
@@ -42,7 +45,9 @@ const NavBar = () => {
           </Box>
 
           <Box marginLeft={7} >
-            <Button className='cor-text-button'>Produtos</Button>
+          <Link to="/produtos" className="cor-text-button cursor">
+              <Button className='cursor'>Produtos</Button>
+            </Link>
             <Button className='cor-text-button'>Oferta do dia</Button>
             <Button color="inherit" className='cor-text-button'>Supermercado</Button>
             <Button color="inherit" className='cor-text-button'>Moda</Button>
