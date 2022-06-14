@@ -1,12 +1,13 @@
 import React from 'react'
 import AppBar from '@mui/material/AppBar'
 import Toolbar from '@mui/material/Toolbar'
-import Typography from '@mui/material/Typography'
-import { Avatar, ThemeProvider, Button } from '@mui/material'
+import { Avatar,Button } from '@mui/material'
 import './NavBar.css';
 import { Box } from '@mui/system'
-import MenuNav from '../menuNav/MenuNav'
-import MenuMobile from './MenuMobile/MenuMobile'
+
+import MenuMobile from './NavBarMobile/MenuMobile/MenuMobile'
+import MenuNav from './menuNav/MenuNav'
+import NavBarMobile from './NavBarMobile/NavBarMobile';
 
 const NavBar = () => {
   return (
@@ -64,21 +65,7 @@ const NavBar = () => {
 
       <Box sx={{ display: { xs: 'display', md: 'none' } }}>
 
-        <AppBar position="static" className='cor-navbar'>
-          <Toolbar>
-            <Box marginX={3} >
-              <Avatar
-                alt="Example Alt"
-                sx={{ width: 80, height: 20 }}
-                src="https://oombe.com/assets/img/mercadolivre_nova_logo.png" />
-            </Box>
-            <Box marginLeft="auto">
-              <MenuMobile></MenuMobile>
-            </Box>
-
-
-          </Toolbar>
-        </AppBar>
+        <NavBarMobile/>
       </Box>
 
 

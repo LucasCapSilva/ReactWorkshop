@@ -1,7 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Avatar, Box, Button, Typography } from '@mui/material';
-import { BorderAllRounded } from '@mui/icons-material';
+
 
 function CarouselCategoria() {
     return (

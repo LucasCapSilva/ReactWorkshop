@@ -1,7 +1,8 @@
 import { Box, Button,CardMedia, Typography } from '@mui/material'
 import React from 'react'
-import CarouselCategoria from '../../components/CarouselCategoria/CarouselCategoria'
-import CarouselPromo from '../../components/carouselPromo/CarouselPromo'
+import CarouselCategoria from '../../components/Carousel/CarouselCategoria/CarouselCategoria'
+import CarouselPromo from '../../components/Carousel/carouselPromo/CarouselPromo'
+
 
 
 

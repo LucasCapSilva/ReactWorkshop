@@ -39,9 +39,14 @@ export default function MenuMobile() {
           horizontal: 'left',
         }}
       >
-        <MenuItem onClick={handleClose}>Profile</MenuItem>
-        <MenuItem onClick={handleClose}>My account</MenuItem>
-        <MenuItem onClick={handleClose}>Logout</MenuItem>
+
+        <MenuItem onClick={handleClose}>Produtos</MenuItem>
+        <MenuItem onClick={handleClose}>Oferta do dia</MenuItem>
+        <MenuItem onClick={handleClose}>Supermercado</MenuItem>
+        <MenuItem onClick={handleClose}>Moda</MenuItem>
+        <MenuItem onClick={handleClose}>Live</MenuItem>
+        <MenuItem onClick={handleClose}>Vender</MenuItem>
+        <MenuItem onClick={handleClose}>Contato</MenuItem>
       </Menu>
     </div>
   );
